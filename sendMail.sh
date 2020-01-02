@@ -6,13 +6,9 @@ read -p "Enter password : " smtppwd
 read -p "Enter Subject of mail : " subject
 read -p "Enter the content of mail : " emailHTMLStr
 
-set +x                     
-
 HOSTNAME="mail.yahoo.com"
 smtpsrv="smtp.yahoo.com"
 smtpport="25"
-
-set -x
 
 function err_exit() { echo -e 1>&2; exit 1; }
 
