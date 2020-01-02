@@ -14,8 +14,6 @@ smtpport="25"
 
 set -x
 
-newline=$'\012'
-
 function err_exit() { echo -e 1>&2; exit 1; }
 
 function mail_input {
@@ -32,7 +30,7 @@ echo -ne "From: <${mailfrom}>\r\n"
 echo -ne "To: <${mailto}>\r\n"
 echo -ne "Subject: ${subject}\r\n"
 echo -ne "\r\n"
-echo -ne ${emailHTMLStr//\\n/$newline}"\r\n"
+echo -ne ${emailHTMLStr}"\r\n"
 echo -ne ".\r\n"
 echo -ne "quit"
 }
