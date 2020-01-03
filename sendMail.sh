@@ -2,7 +2,7 @@
 
 #Geting user data
 read -p "Enter your mail ID : " mailfrom
-read -p "Enter recptionist Mail ID : " mailto
+read -p "Enter recipient Mail ID : " mailto
 read -p "Enter password : " smtppwd
 read -p "Enter Subject of mail : " subject
 read -p "Enter the content of mail : " content
