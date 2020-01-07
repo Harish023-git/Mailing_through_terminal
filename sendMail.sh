@@ -6,6 +6,7 @@ read -p "Enter recipient Mail ID : " mailto
 read -p "Enter password : " smtppwd
 read -p "Enter Subject of mail : " subject
 read -p "Enter the content of mail : " content
+smtpusr=$mailfrom
 
 #Redirecting to stderr
 function err_exit() { echo -e 1>&2; exit 1; }
