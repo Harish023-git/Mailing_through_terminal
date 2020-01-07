@@ -13,19 +13,19 @@ function err_exit() { echo -e 1>&2; exit 1; }
 
 #Send mail
 function mail_input {
-echo -ne "AUTH LOGIN\r\n"
-echo -ne "${smtpusr}\r\n"
-echo -ne "${smtppwd}\r\n"
-echo -ne "MAIL FROM: <${mailfrom}>\r\n"
-echo -ne "RCPT TO: <${mailto}>\r\n"
-echo -ne "DATA\r\n"
-echo -ne "Content-type: text/html\r\n"
-echo -ne "From: <${mailfrom}>\r\n"
-echo -ne "To: <${mailto}>\r\n"
-echo -ne "Subject: ${subject}\r\n"
-echo -ne "\r\n"
-echo -ne ${content}"\r\n"
-echo -ne ".\r\n"
+echo -ne "AUTH LOGIN\n"
+echo -ne "${smtpusr}\n"
+echo -ne "${smtppwd}\n"
+echo -ne "MAIL FROM: <${mailfrom}>\n"
+echo -ne "RCPT TO: <${mailto}>\n"
+echo -ne "DATA\n"
+echo -ne "Content-type: text/html\n"
+echo -ne "From: <${mailfrom}>\n"
+echo -ne "To: <${mailto}>\n"
+echo -ne "Subject: ${subject}\n"
+echo -ne "\n"
+echo -ne ${content}"\n"
+echo -ne ".\n"
 echo -ne "quit"
 }
 
