@@ -1,4 +1,6 @@
+#To begin SSL session with IMAP server:
 openssl s_client -connect <ip>:<port>           #eg: imap.yahoo.mail.com:993
+#Login:
 a01 LOGIN <username> <password>                 
 a02 LIST "" "*"               
 a03 SELECT <mailbox>                            #eg: Inbox
